@@ -3,7 +3,7 @@
 **Responsive News Homepage**  
 Built with **React** and **JavaScript**
 
-🔗 **Live Demo:** [News-Page-Clone on GitHub Pages]()
+🔗 **Live Demo:** [News-Page-Clone on GitHub Pages](https://malikrob16.github.io/News-Page-Clone/)
 
 ---
 
