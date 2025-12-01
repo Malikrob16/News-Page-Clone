@@ -1,38 +1,492 @@
+:root {
+
+  --background:#fff;
+
+  --textactive:orange;
+
+  --newsactive:gold;
+
+  --buttonhover:black;
+
+}
+
+/* Basic formatting across all elements */
+html {
+	box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+
+figure {
+	margin: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+	margin: 0;
+  padding: 0;
+}
+
+p {
+	margin: 0 0 1rem;
+}
+
+p:last-of-type {
+	margin: 0;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Overall structure */
 .App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100dvw;
+  flex-direction: column;
   text-align: center;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100%;
+  line-height: 1.65;
+  margin: 0;
+  background: var(--background);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header/Navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+  width: 80%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.site-logo {
+  width: 5rem;
+  height: 3rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 37rem;
+  overflow: hidden;
+  gap: 1.5rem;  
+}
+
+li {
+  list-style: none;
+  transition: all 0.3s ease;
+}
+
+li:hover {
+  color: var(--textactive);
+}
+
+.mobile-menu,
+nav button {
+  display: none;
+}
+
+/* Main section */
+.main {
+  display: flex;
+  width: 80%;
+  height: 35rem;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Hero sections */
+.hero-section {
+  width: 70%;
+}
+
+.hero-image {
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+}
+
+.hero-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.hero-subsection {
+  display: flex;
+  width: 100%;
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1;
+  padding: 1.5rem;
+}
+
+.hero-description {
+  padding: 1.5rem;
+  margin: 0;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.hero-button {
+  background: var(--textactive);
+  width: 15rem;
+  height: 3rem;
+  padding: 1rem;
+  margin: 1.5rem 1.5rem 1.5rem 0;
+  font-weight: bolder;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+  color: var(--background);
+  background: var(--buttonhover);
+}
+
+/* News list section */
+.news-list {
+  background: black;
+  width: 30%;
+  color: white;
+  text-align: left;
+}
+
+.newslist-header {
+  color: var(--textactive);
+  font-size: 2.5rem;
+  margin: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.news-items {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.news-item {
+  margin: 1.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.news-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.news-title:hover {
+  color: var(--textactive);
+}
+
+.news-summary {
+  opacity: 0.5;
+}
+
+/* Footer section */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.footer img {
+  width: 7rem;
+  height: 9rem;
+}
+
+.article {
+  text-align: left;
+  display: flex;
+  gap: 1.5rem;
+  width: 33%;
+}
+
+.article-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--textactive);
+}
+
+.article-title {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  transition: all 0.3s ease;
+}
+
+.article-title:hover {
+  color: var(--textactive);
+}
+
+.article-summary {
+
+}
+
+/* Mobile view */
+@media (max-width: 500px) {
+
+  /* Remove scrollbar for mobile view */
+  ::-webkit-scrollbar {
+    visibility: hidden;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App {
+    margin-bottom: 5rem;
+  }
+
+  .desktop-nav {
+    display: none;
+    visibility: hidden;
+  }
+
+  nav {
+    width: 90%;
+  }
+
+  .menu-button {
+    display: flex;
+    visibility: visible;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+  }
+
+  .menu-button img {
+    width: 3rem;
+    height: 1.5rem;
+  }
+
+  .menu-button:hover,
+  .menu-button:active,
+  .menu-button:focus {
+    border: 0.1rem solid black;
+    box-shadow: 0 0 15px var(--textactive);
+    cursor: pointer;
+  }
+
+  /* Mobile Menu */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100dvh;
+    width: 17rem;            /* width of the slide-in panel */
+    background: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    gap: 2rem;
+    z-index: 2;          /* above everything */
+    animation: slideIn 0.3s ease forwards;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+  }
+
+  /* Menu slideIn Animation */
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .menu-underlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+    animation: fadeIn 0.3s ease forwards;
+  }
+
+  /* Mobile menu list */
+  .close-container {
+    width: 100%;
+  }
+  .close-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 15px;
+    z-index: 3;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .close-button:hover,
+  .close-button:active,
+  .close-button:focus {
+    border: 0.1rem solid black;
+    box-shadow: 0 0 15px var(--textactive);
+  }
+
+  .close-button img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 7rem 0 0 0;
+  }
+
+  .mobile-menu .menu-item {
+    width: 100%;
+    font-size: 1.5rem;
+    list-style: none;
+    text-align: left;
+    transition: all 0.3s ease;
+  }
+
+  .mobile-menu .menu-item:hover,
+  .mobile-menu .menu-item:active,
+  .mobile-menu .menu-item:focus {
+    border: 0.1rem solid black;
+    box-shadow: 0 0 15px var(--textactive);
+  }
+
+  .mobile-menu li a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: auto !important;
+    overflow: hidden;
+  }
+
+  .hero-section {
+    width: 100%;
+  }
+
+
+  .hero-image {
+    width: 100%;
+    height: auto !important;
+    overflow: hidden;
+    background: red;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto !important;
+    object-fit: cover;
+    display: block;
+  }
+
+  .hero-subsection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-title {
+    margin: 1rem 0 1rem 0;
+    padding: 0;
+  }
+
+  .hero-description {
+    margin: 1rem 0 1rem 0;
+    padding: 0;
+  }
+
+  .news-list {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .news-item .news-title {
+    font-size: 1.7rem;
+  }
+
+  .news-item .news-summary {
+    font-size: 1.2rem;
+  }
+
+  .news-item:last-of-type {
+    padding: 0;
+    border: none;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .article {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    width: 90%;
+    padding: 1rem 0 1rem 0;
+  }
+
+  .article figure {
+    width: 9rem;
+    height: 12rem;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+
+  .article figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .article .article-number {
+    font-size: 3rem;
+  }
+
+  .article .article-summary {
+    font-size: 1.2rem;
   }
 }

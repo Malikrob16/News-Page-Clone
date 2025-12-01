@@ -1,70 +1,141 @@
-# Getting Started with Create React App
+# 📰 News Homepage Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Responsive News Homepage**  
+Built with **React** and **JavaScript**
 
-## Available Scripts
+🔗 **Live Demo:** [News-Page-Clone on GitHub Pages]()
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📖 About the Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Newspage Clone** is a Frontend Mentor Junior level challenge. Link to challenge: https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl 
+This is my first React based project. This challenge focus on frontend development skills like positioning, responsiveness, and base level javascript additions.
+The site features a clean, user-friendly interface with both desktop and mobile responsiveness, and a visually appealing layout.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This project emphasizes **front-end development fundamentals** — layout, responsiveness, accessibility, and user experience.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Design templates
 
-### `npm run build`
+-Desktop Design:
+![alt text](image-1.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-Active states:
+![alt text](image.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-Mobile Design:
+![alt text](image-2.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-Mobile Menu Design:
+![alt text](image-3.png)
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🧩 Features
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- 📽️ **Reusable React Components:** Structured UI built using modular components.  
+- 💬 **Interactive UI:** Includes hover effects and dynamic content presentation.  
+- 📱 **Responsive Design:** Optimized for desktop and mobile screens using CSS Flexbox.  
+- ⚡ **Fast & Efficient:** SPA powered by React's virtual DOM.  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🛠️ Technologies Used
 
-## Learn More
+| Category | Tools & Languages |
+|-----------|------------------|
+| **Frontend** | React, JavaScript (ES6), JSX |
+| **Styling** | CSS3 |
+| **Version Control** | Git & GitHub |
+| **Deployment** | GitHub Pages |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📅 Project Timeline
 
-### Code Splitting
+Duration: November 2025 – November 2025 (2 weeks)
+Role: Front-End Developer
+Author: Malik Robinson
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 📂 Project Structure
+```
+```bash
+News-HomePage-Clone/
+│
+├── design/
+│   ├── active-states.jpg     # Active-states (Desktop design)
+│   ├── desktop-design.jpg    # Desktop-design
+│   ├── mobile-design.jpg     # Mobile-design
+│   └── mobile-menu.jpg       # Mobile-menu design
+│
+├── public/
+│   ├── assets/        # Images, Icons, etc.
+│       └── images/    # Images and icons
+│   └── index.html     # HTML Template
+│
+├── src/
+│   ├── components/          # Reusable UI components
+│   ├── App.css              # Global styling
+│   ├── App.js               # Root component
+│   ├── index.css            # base index styling
+│   └── index.js             # base index
+│
+├── .gitignore         # Git ignore file
+├── package.json
+└── README.md          # Project documentation
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🧠 Learning Goals
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The main objective of this project was to strengthen front-end development skills by:
 
-### Advanced Configuration
+-Practicing semantic HTML and modern CSS layout techniques
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+-Building responsive layouts with React-friendly styling
 
-### Deployment
+-Managing state using React Hooks (useState, useEffect, etc.)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+-Improving modular code organization and reusability
 
-### `npm run build` fails to minify
+-Building and deploying a production-ready React application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 🧾 License
+
+This project is open source and available under the MIT License
+.
+
+---
+
+## 👨‍💻 Author
+
+Malik Robinson
+Front-End Developer | Passionate about creating interactive and responsive web experiences
+📧 malik16.mr@gmail.com
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/Malikrob16/News-Page-Clone.git
+
+### 2. Navigate into project directory
+cd news-homepage-clone
+
+### 3. Install dependencies
+npm install
+# or
+yarn install
+
+### 4. Run the development server
+npm start
+```
