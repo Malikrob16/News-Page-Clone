@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/News-Page-Clone/static/css/main.eabd9525.css",
+    "main.js": "/News-Page-Clone/static/js/main.3d04f281.js",
+    "index.html": "/News-Page-Clone/index.html",
+    "main.eabd9525.css.map": "/News-Page-Clone/static/css/main.eabd9525.css.map",
+    "main.3d04f281.js.map": "/News-Page-Clone/static/js/main.3d04f281.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eabd9525.css",
+    "static/js/main.3d04f281.js"
+  ]
+}
